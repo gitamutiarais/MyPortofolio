@@ -113,7 +113,9 @@
             <div class="card">
               <img src="img/projects/1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary d-grid gap-2 ">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -121,7 +123,9 @@
             <div class="card">
               <img src="img/projects/2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary d-grid gap-2">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -129,7 +133,9 @@
             <div class="card">
               <img src="img/projects/3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary d-grid gap-2">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -137,7 +143,9 @@
             <div class="card">
               <img src="img/projects/4.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary d-grid gap-2">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -145,7 +153,9 @@
             <div class="card">
               <img src="img/projects/5.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary d-grid gap-2">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -197,6 +207,7 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <!-- footer -->
@@ -233,38 +244,7 @@
       AOS.init();
     </script>
 
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzkXs3F9qA5pyCNt7otgSmi0OmPMnW358wNfl-PNlDzN0pnni_HdzptgMJfXaSRYLck/exec";
-      const form = document.forms["contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        // ketika tombol loading di klik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // ketika tombol loading di klik
-            // tampilkan tombol kirim , hilangkan tombol loading
-
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-
-            // reset form
-            form.reset();
-
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <!-- java script -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
